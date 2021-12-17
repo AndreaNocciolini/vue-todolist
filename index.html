@@ -25,9 +25,10 @@
         
             <div class="todos">
                 <ul>
-                    <li v-for="todo in todos">
+                    <li v-for="(todo, index) in todos">
                         <div class="todo-text">
                             <h2>{{todo.text}}</h2>
+                            <i @click="remove" class="far fa-check-circle"></i>
                         </div>
                     </li>
                 </ul>

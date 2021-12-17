@@ -17,7 +17,7 @@ const app = new Vue (
         },
         methods: {
             add: function(){
-                if (this.todoNew.lenght != 0) {
+                if (this.todoNew != ``) {
                     let obj = {
                     text: this.todoNew,
                     done: false
@@ -26,6 +26,9 @@ const app = new Vue (
                 this.todoNew = ``
                 }
                 
+            },
+            remove: function(index) {
+                this.todos.splice(index, 1)
             }
         },
     }

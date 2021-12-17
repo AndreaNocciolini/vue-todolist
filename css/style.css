@@ -18,3 +18,9 @@ html {
 .todos ul{
     list-style-type: none;
 }
+
+.todo-text {
+    display: flex;
+    justify-content: space-between;
+}
+
