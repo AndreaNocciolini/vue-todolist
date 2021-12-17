@@ -14,6 +14,16 @@ const app = new Vue (
                     done: false
                 }
             ]
-        }
+        },
+        methods: {
+            add: function(){
+                let obj = {
+                    text: this.todoNew,
+                    done: false
+                }
+                this.todos.push(obj);
+                this.todoNew = ``
+            }
+        },
     }
 )

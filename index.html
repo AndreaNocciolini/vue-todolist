@@ -20,7 +20,7 @@
             <header class="header">
                 <h1>To Do List</h1>
                 <input v-model="todoNew" class="input" type="text" placeholder="Add...">
-                <i class="fas fa-plus-circle"></i>
+                <i @click="add" class="fas fa-plus-circle"></i>
             </header>
         
             <div class="todos">
