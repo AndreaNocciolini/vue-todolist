@@ -17,12 +17,15 @@ const app = new Vue (
         },
         methods: {
             add: function(){
-                let obj = {
+                if (this.todoNew.lenght != 0) {
+                    let obj = {
                     text: this.todoNew,
                     done: false
                 }
-                this.todos.push(obj);
+                this.todos.unshift(obj);
                 this.todoNew = ``
+                }
+                
             }
         },
     }

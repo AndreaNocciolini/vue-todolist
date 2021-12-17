@@ -15,6 +15,6 @@ html {
     border-radius: 25px;
 }
 
-.todos {
-    overflow-y: auto; /*Leva lo style alla lista(?)*/
+.todos ul{
+    list-style-type: none;
 }
