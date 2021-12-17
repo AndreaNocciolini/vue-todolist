@@ -3,3 +3,17 @@
 // - text, una stringa che indica il testo del todo
 // - done, un booleano (true/false) che indica se il todo è stato fatto oppure no
 
+const app = new Vue (
+    {   
+        el: `#app`,
+        data: {
+            todoNew: ``,
+            todos: [
+                {
+                    text: `fiero`,
+                    done: false
+                }
+            ]
+        }
+    }
+)
