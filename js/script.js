@@ -9,10 +9,6 @@ const app = new Vue (
         data: {
             todoNew: ``,
             todos: [
-                {
-                    text: `fiero`,
-                    done: false
-                }
             ]
         },
         methods: {
@@ -29,6 +25,10 @@ const app = new Vue (
             },
             remove: function(index) {
                 this.todos.splice(index, 1)
+            },
+            checked: function (index) {
+                this.todos[index].done = !this.todos[index].done;
+                console.log(this.todos[index].done)
             }
         },
     }

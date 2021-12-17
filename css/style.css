@@ -5,7 +5,8 @@
 }
 
 html {
-    background: rgb(23,218,0);}
+    background-image: linear-gradient(to right, #203bbb, #007de6, #00b0e0, #00dbc7, #b5ffbe);
+}
 
 .inner-container {
     width: 80%;
@@ -15,6 +16,24 @@ html {
     border-radius: 25px;
 }
 
+.input-cont {
+    border: solid 1px gray;
+    border-radius: 15px;
+    padding: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    width: 70%;
+    border-style: none;
+}
+
+.icon {
+    font-size: 2.3em;
+}
+
 .todos ul{
     list-style-type: none;
 }
@@ -22,5 +41,15 @@ html {
 .todo-text {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    border-radius: 1em;
+    padding: 1em;
+    background-image: linear-gradient(to right, #20bb33, #57cb5e, #7edb84, #a2eaa8, #c6f8cc);
 }
+
+.text-mark {
+    text-decoration: line-through 0.1em;
+}
+
 
